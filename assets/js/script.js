@@ -15,7 +15,7 @@ anime.timeline().add({
   delay: (el, i) => 2000 + 60 * i,
 });
 
-TweenMax.to(".btn-shine", 3, {
+TweenMax.to(".loading", 3, {
   opacity: 0,
   ease: Expo.easeInOut,
   delay: 0.5,
