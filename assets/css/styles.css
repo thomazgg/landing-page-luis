@@ -99,7 +99,7 @@ section .header{
 	gap: 120px;
 }
 
-.header__left {
+.header .left {
 	display: flex;
 	max-width: 512px;
 	width: 50%;
@@ -107,30 +107,13 @@ section .header{
     justify-content: center;
 }
 
-.header__right {
+.header .right {
 	display: flex;
 	max-width: 512px;
 	width: 50%;
 	flex-direction: column;
     justify-content: center;
 }
-
-.header__glow {
-    position: absolute;
-    transform: translate(-20%, -10%);
-    width: 70rem;
-    max-width: unset;
-	z-index: 1;
-}
-
-.header__mockup {
-    position: absolute;
-    transform: translate(70%, 40%);
-    width: 15rem;
-    max-width: unset;
-	z-index: 1;
-}
-
 
 /* =========================== */
 
@@ -216,11 +199,11 @@ section .header{
 		gap: 0;
 	}
 
-	.header__left {
+	.header .left {
 		width: 100%;
 	}
 
-	.header__right {
+	.header .right {
 		width: 0%;
 	}
 }
