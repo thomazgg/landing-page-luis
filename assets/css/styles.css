@@ -3,9 +3,9 @@
 
 :root {
     --primary-color: #34FD50;
-    --secondary-color: #ea8b19;
+    --secondary-color: #EA8B19;
     --background-color: #000000;
-    --text-color: #ffffff;
+    --text-color: #FFFFFF;
 }
 
 * {
@@ -67,13 +67,9 @@ section .header{
 	height: 50vh;
 }
 
-.header .column {
-	width: 50%;
-}
-
 .hero__bg {
 	width: 100%;
-    height: 50rem;
+    height: 60rem;
     position: absolute;
     left: 0;
     top: 0;
@@ -103,19 +99,18 @@ section .header{
 	gap: 120px;
 }
 
-.left {
+.header__left {
 	display: flex;
 	max-width: 512px;
-	height: 100vh;
+	width: 50%;
 	flex-direction: column;
     justify-content: center;
 }
 
-.right {
-	display: relative;
-	right: 0;
+.header__right {
+	display: flex;
 	max-width: 512px;
-	height: 100vh;
+	width: 50%;
 	flex-direction: column;
     justify-content: center;
 }
@@ -215,43 +210,18 @@ section .header{
     margin-right: 8px;
 }
 
-@media (min-width: 1600px) {
-	.images {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+@media (max-width: 1200px) {
+	.header {
+		padding: 20px;
+		gap: 0;
 	}
-}
 
-@media (max-width: 1600px) {
-	.header .column {
+	.header__left {
 		width: 100%;
-		height: 100vh;
-	}
-	
-	.images {
-		display: flex;
-		flex-direction: row;
-		padding: 120px;
-	}
-}
-
-@media (max-width: 800px) {
-	.header .ml12 {
-		color: #ffffff;
-		text-transform: uppercase;
-		font-size: 32px;
 	}
 
-	.header .img {
-		width: 100%;
-		height: 100%;
-	}
-	
-	.images {
-		display: flex;
-		flex-direction: column;
-		padding: 2em;
+	.header__right {
+		width: 0%;
 	}
 }
 
@@ -299,12 +269,8 @@ section .header{
 /* ============= Info ============ */
 
 .info {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
 	background: #161616;
 	padding: 120px;
-	gap: 120px;
 }
 
 /* ============= About ============ */
@@ -312,9 +278,10 @@ section .header{
 .about {
 	display: flex;
 	flex-direction: row;
+	align-items: center;
+	padding: 120px;
 	justify-content: center;
 	background: #161616;
-	/* padding: 120px; */
 	gap: 120px;
 }
 
@@ -347,13 +314,7 @@ section .header{
 @media (max-width: 1200px) {
 	.about {
 		flex-direction: column;
-		justify-content: center;
-		padding: 2em;
-	}
-
-	.about .column {
-		max-width: 100%;
-		width: 100%;
+		padding: 20px;
 	}
 }
 
